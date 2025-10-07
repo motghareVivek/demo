@@ -1,0 +1,37 @@
+
+    .emoji {
+      position: absolute;
+      left: var(--x);
+      font-size: var(--size);
+      opacity: 0.2;
+      animation: floatUp var(--duration) linear infinite;
+      animation-delay: var(--delay);
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100vh) translateX(0) scale(0.8);
+        opacity: 0;
+      }
+
+      25% {
+        opacity: 0.3;
+      }
+
+      50% {
+        transform: translateY(50vh) translateX(10px) scale(1);
+        opacity: 0.25;
+      }
+
+      75% {
+        transform: translateY(25vh) translateX(-10px) scale(1.05);
+        opacity: 0.3;
+      }
+
+      100% {
+        transform: translateY(-10vh) translateX(0) scale(1.1);
+        opacity: 0;
+      }
+    }
+
+    
